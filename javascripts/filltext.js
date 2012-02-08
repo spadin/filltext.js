@@ -8,6 +8,7 @@
         originalHtml = container.html();
         container.html("<div class='filltext'>" + originalHtml + "</div>");
         filltext = $(".filltext", container);
+        filltext.css('font-size', '2px');
         while (filltext.height() < container.height()) {
           filltext.css('font-size', '+=1');
         }

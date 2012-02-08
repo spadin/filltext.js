@@ -6,5 +6,6 @@ $.fn.extend
       container.html("<div class='filltext'>#{originalHtml}</div>")
 
       filltext = $(".filltext", container)
+      filltext.css('font-size', '2px')
       filltext.css('font-size', '+=1') while(filltext.height() < container.height())
       filltext.css('font-size', '-=1')
