@@ -1,4 +1,4 @@
-fittext.js
+filltext.js
 ==========
 
 Continously increases the font-size of text inside a block container until the
