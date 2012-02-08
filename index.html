@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>filltext.js</title>
+  <style type="text/css" media="screen">
+    #filltext1 {
+      width: 400px;
+      height: 200px;
+    }
+    #filltext2 {
+      width: 300px;
+      height: 40px;
+    }
+    #filltext3 {
+      width: 500px;
+      height: 200px;
+    }
+  </style>
+  <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="javascripts/filltext.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $("#filltext1").filltext();
+      $("#filltext2").filltext();
+      $("#filltext3").filltext();
+    });
+  </script>
+</head>
+<body>
+  <h1 id="filltext1">Joe Jamboni</h1>
+  <h4 id="filltext2">A example headline for a webpage</h4>
+  <div id="filltext3">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+      survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+      popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</body>
+</html>
