@@ -21,6 +21,7 @@ $.fn.extend
       filltext.css('font-size', '2px')
       filltext.css('font-size', '+=1') while(filltext.height() < maxHeight and (parseInt(filltext.css('font-size'),10) < settings.maxSize))
       filltext.css('font-size', '-=1') while(filltext.width() > maxWidth)
+      filltext.css('font-size', '-=1') while(filltext.height() > maxHeight and (parseInt(filltext.css('font-size'),10) < settings.maxSize))
       smallest = parseInt(filltext.css('font-size'),10) if parseInt(filltext.css('font-size'),10) < smallest
 
     if(settings.sameSize)

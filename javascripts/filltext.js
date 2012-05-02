@@ -28,6 +28,9 @@
         while (filltext.width() > maxWidth) {
           filltext.css('font-size', '-=1');
         }
+        while (filltext.height() > maxHeight && (parseInt(filltext.css('font-size'), 10) < settings.maxSize)) {
+          filltext.css('font-size', '-=1');
+        }
         if (parseInt(filltext.css('font-size'), 10) < smallest) {
           return smallest = parseInt(filltext.css('font-size'), 10);
         }
