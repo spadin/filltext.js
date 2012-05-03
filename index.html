@@ -4,12 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Filltext.js by spadin</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/filltext.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $(".filltext-holder").filltext({
+        maxSize: 108
+      });
+    });
+    </script>
+    <style type="text/css">
+      .filltext-holder {
+        width:  600px;
+        height: 200px;
+        border: 1px solid #999;
+      }
+    </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -56,7 +70,12 @@
 
 <h2>Example</h2>
 
-<p>TBD</p>
+<p>
+  <h1 class='filltext-holder'>Joe Jambroni</h1>
+</p>
+<p>
+  <h1 class='filltext-holder'>Some long dynamic title text can go here</h1>
+</p>
       </section>
     </div>
     <footer>
